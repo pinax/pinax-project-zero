@@ -1,6 +1,7 @@
 import os
 
 
+PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir))
 PACKAGE_ROOT = os.path.abspath(os.path.dirname(__file__))
 
 DEBUG = True
@@ -85,6 +86,19 @@ TEMPLATE_LOADERS = [
     "django.template.loaders.app_directories.Loader",
 ]
 
+TEMPLATE_CONTEXT_PROCESSORS = [
+    "django.contrib.auth.context_processors.auth",
+    "django.core.context_processors.debug",
+    "django.core.context_processors.i18n",
+    "django.core.context_processors.media",
+    "django.core.context_processors.static",
+    "django.core.context_processors.tz",
+    "django.core.context_processors.request",
+    "django.contrib.messages.context_processors.messages",
+    "pinax_utils.context_processors.settings",
+]
+
+
 MIDDLEWARE_CLASSES = [
     "django.middleware.common.CommonMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
@@ -114,6 +128,7 @@ INSTALLED_APPS = [
     "pinax_theme_bootstrap",
     
     # external
+    "django_forms_bootstrap",
     
     # project
 ]
@@ -146,3 +161,7 @@ LOGGING = {
         },
     }
 }
+
+FIXTURE_DIRS = [
+    os.path.join(PROJECT_ROOT, "fixtures"),
+]
