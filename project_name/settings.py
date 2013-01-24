@@ -131,6 +131,7 @@ INSTALLED_APPS = [
     "django_forms_bootstrap",
     
     # project
+    "{{ project_name }}",
 ]
 
 # A sample logging configuration. The only tangible logging
