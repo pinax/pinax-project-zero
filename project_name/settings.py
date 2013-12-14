@@ -33,7 +33,7 @@ TIME_ZONE = "UTC"
 # http://www.i18nguy.com/unicode/language-identifiers.html
 LANGUAGE_CODE = "en-us"
 
-SITE_ID = 1
+SITE_ID = int(os.environ.get("SITE_ID", 1))
 
 # If you set this to False, Django will make some optimizations so as not
 # to load the internationalization machinery.
@@ -95,7 +95,8 @@ TEMPLATE_CONTEXT_PROCESSORS = [
     "django.core.context_processors.tz",
     "django.core.context_processors.request",
     "django.contrib.messages.context_processors.messages",
-    "pinax_utils.context_processors.settings",
+    "pinax_theme_bootstrap.context_processors.theme",
+    "{{ project_name }}.context_processors.settings",
 ]
 
 
@@ -119,17 +120,15 @@ TEMPLATE_DIRS = [
 INSTALLED_APPS = [
     "django.contrib.auth",
     "django.contrib.contenttypes",
+    "django.contrib.messages",
     "django.contrib.sessions",
     "django.contrib.sites",
-    "django.contrib.messages",
     "django.contrib.staticfiles",
-    
+
     # theme
+    "bootstrapform",
     "pinax_theme_bootstrap",
-    
-    # external
-    "django_forms_bootstrap",
-    
+
     # project
     "{{ project_name }}",
 ]
@@ -166,3 +165,5 @@ LOGGING = {
 FIXTURE_DIRS = [
     os.path.join(PROJECT_ROOT, "fixtures"),
 ]
+
+EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"

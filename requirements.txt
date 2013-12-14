@@ -1,6 +1,2 @@
---extra-index-url=http://dist.pinaxproject.com/dev/
---extra-index-url=http://dist.pinaxproject.com/alpha/
-
-Django==1.4.5
-pinax-theme-bootstrap==2.2.2
-pinax-utils==1.0b1.dev3
+Django==1.6.1
+pinax-theme-bootstrap==5.0.1
