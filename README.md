@@ -9,6 +9,7 @@ Usage:
 
     django-admin.py startproject --template=https://github.com/pinax/pinax-project-zero/zipball/master <project_name>
 
+
 Getting Started:
 
     pip install virtualenv
