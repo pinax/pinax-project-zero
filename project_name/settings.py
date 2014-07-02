@@ -77,7 +77,7 @@ STATICFILES_FINDERS = [
     "django.contrib.staticfiles.finders.AppDirectoriesFinder",
 ]
 
-# Make this unique, and don"t share it with anybody.
+# Make this unique, and don't share it with anybody.
 SECRET_KEY = "{{ secret_key }}"
 
 # List of callables that know how to import templates from various sources.
@@ -109,7 +109,7 @@ MIDDLEWARE_CLASSES = [
 
 ROOT_URLCONF = "{{ project_name }}.urls"
 
-# Python dotted path to the WSGI application used by Django"s runserver.
+# Python dotted path to the WSGI application used by Django's runserver.
 WSGI_APPLICATION = "{{ project_name }}.wsgi.application"
 
 TEMPLATE_DIRS = [
