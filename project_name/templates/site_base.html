@@ -1,4 +1,4 @@
-{% extends "theme_base.html" %}
+{% extends "theme_bootstrap/base.html" %}
 
 {% load staticfiles %}
 {% load i18n %}
@@ -31,7 +31,7 @@
 
 
 {% block script_base %}
-    <script src="{% block jquery_src %}{% static "pinax/js/jquery.js" %}{% endblock %}"></script>
+    <script src="{% block jquery_src %}{% static "jquery/js/jquery.js" %}{% endblock %}"></script>
     <script src="{% static "js/bootstrap.min.js" %}"></script>
     <script src="{% static "pinax/js/theme.js" %}"></script>
     {% block extra_script %}{% endblock %}
