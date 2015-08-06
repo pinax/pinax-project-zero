@@ -12,7 +12,7 @@ script:
   - cd mysite
   - chmod +x manage.py
   - pip install -r requirements.txt
-  - ./manage.py syncdb --noinput
+  - ./manage.py migrate
   - ./manage.py loaddata sites
   - ./manage.py validate
   - flake8 mysite
