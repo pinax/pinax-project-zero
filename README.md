@@ -1,6 +1,6 @@
 # pinax-project-zero
 
-[![Join the chat at https://gitter.im/pinax/pinax-project-zero](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/pinax/pinax-project-zero?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Join us on Slack](http://slack.pinaxproject.com/badge.svg)](http://slack.pinaxproject.com/)
 
 This project lays the foundation for all other Pinax starter projects. It
 provides the project directory layout and bootstrap-based theme.
