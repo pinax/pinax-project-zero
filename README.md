@@ -9,7 +9,7 @@ provides the project directory layout and bootstrap-based theme.
 Usage:
 
 ```
-django-admin.py startproject --template=https://github.com/pinax/pinax-project-zero/zipball/master <project_name>
+django-admin.py startproject --template=https://github.com/pinax/pinax-project-zero/zipball/master <project_name> --extensions=py,js
 ```
 
 Getting Started:
@@ -19,7 +19,7 @@ pip install virtualenv
 virtualenv mysiteenv
 source mysiteenv/bin/activate
 pip install Django==1.8.3
-django-admin.py startproject --template=https://github.com/pinax/pinax-project-zero/zipball/master mysite
+django-admin.py startproject --template=https://github.com/pinax/pinax-project-zero/zipball/master mysite --extensions=py,js
 cd mysite
 chmod +x manage.py
 pip install -r requirements.txt
