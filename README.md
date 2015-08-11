@@ -1,4 +1,4 @@
-# Pinax Project Account
+# Pinax Project Zero
 
 [![Join us on Slack](http://slack.pinaxproject.com/badge.svg)](http://slack.pinaxproject.com/)
 
