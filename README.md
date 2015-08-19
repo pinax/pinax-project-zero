@@ -2,7 +2,16 @@
 
 [![Join us on Slack](http://slack.pinaxproject.com/badge.svg)](http://slack.pinaxproject.com/)
 
-This project lays the foundation for all other [Pinax starter projects](https://github.com/pinax/pinax-projects/blob/master/README.md#projects). It provides the project directory layout and [bootstrap-based theme](https://github.com/pinax/pinax-theme-bootstrap).
+pinax-project-zero lays the foundation for all other [Pinax starter projects](https://github.com/pinax/pinax-projects/blob/master/README.md#projects). It provides the project directory layout and [bootstrap-based theme](https://github.com/pinax/pinax-theme-bootstrap).
+
+Pinax is an open-source platform built on the Django Web Framework. It is an ecosystem of reusable Django apps, themes, and starter project templates. 
+This collection can be found at http://pinaxproject.com.
+
+In order to foster a kind, inclusive, and harassment-free community, the Pinax Project has a code of conduct, which can be found here  http://pinaxproject.com/pinax/code_of_conduct/.
+
+The Pinax documentation is available at http://pinaxproject.com/pinax/.
+
+For updates and news regarding the Pinax Project, please follow us on Twitter at [@pinaxproject](https://twitter.com/pinaxproject) and check out our blog http://blog.pinaxproject.com.
 
 The source code for this project template has moved to the [zero branch](https://github.com/pinax/pinax-projects/tree/zero) of [pinax-projects](https://github.com/pinax/pinax-projects/).
 
